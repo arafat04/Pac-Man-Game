@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac-Man Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-md-8 my-2 d-flex justify-content-center"
+          id="game-canvas-container"
+        >
+          <div id="board" class="border border-secondary"">
+           
+    
+          </div>
+        </div>
+        <div class="col-md-4 my-auto">
+                <p class="border-bottom text-end">Score: <span id="scoreBox">0</span></p>
+                
+                <div class="row">
+                    <div class="col-12 text-center my-2">
+                        <button class="btn rounded-pill btn-light p-3" onclick="setMovement('ArrowUp')"><i class="nav-arrow fas fa-arrow-up"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-4 my-2 text-center">
+                        <button class="btn rounded-pill btn-light p-3" onclick="setMovement('ArrowLeft')"><i class="nav-arrow fas fa-arrow-left"></i></button>
+                    </div>
+                    <div class="col-4 my-2 text-center">
+                        <button class="btn rounded-pill btn-light p-3" onclick="setMovement('ArrowRight')"><i class="nav-arrow fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 text-center my-2">
+                        <button class="btn rounded-pill btn-light p-3" onclick="setMovement('ArrowDown')"><i class="nav-arrow fas fa-arrow-down"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center my-2">
+                        <button class="btn rounded-pill btn-light p-3" onclick="setMovement('Enter')"><i class="fas fa-equals"></i></button>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="js/index.js"></script>
+  
+</html>
